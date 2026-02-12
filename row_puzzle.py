@@ -1,7 +1,7 @@
 
 #Author:Gabriel Venegas
 #Github:GVenegas1
-# Feb 11, 2026
+#Feb 11, 2026
 #Description:Tries to find a path to the zero at the end of the list.
 #We move by jumping the exact number written on our current square.
 
@@ -18,7 +18,7 @@ def explore_path(game_squares, current_spot, path_history):
     if current_spot < 0 or current_spot >= len(game_squares):
         return False
 
-    # Check: If we have already stood on this square in this path and stop!
+    #Check: If we have already stood on this square in this path and stop!
     if current_spot in path_history:
         return False
 
